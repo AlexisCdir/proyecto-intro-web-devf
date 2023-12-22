@@ -1,26 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
 body{
     color: white;
+    background-color: black;
+    margin: 0;
     display: grid;
-    grid-template-columns: 400px auto;
-    grid-template-rows: 7vh 7vh 74vh 10vh;
+    grid-template-columns: 23vw auto;
+    grid-template-rows: 62px 62px auto 10vh;
+    font-family: Rubik;
 }
 .navigation-menu {
-    background-color: red;
+    background-color: rgb(18,18,18);
     grid-row-start: 1;
     grid-row-end: 3;
-}
-.top-panel{
-    background-color: blue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 22px 0;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin: 8px 4px 2px 8px;
 }
 .side-playlist-menu{
     background-color: palegreen;
+
+    border-radius: 10px;
+    margin: 4px 4px 0 8px;
 }
 .main-container{
-    background-color: orange;
+    background-color: rgb(18,18,18);
     grid-column: 2;
-    grid-row: 2/4;
+    grid-row: 1/4;
+
+    height: 89vh;
+    border-radius: 10px;
+    margin:  8px 8px 0 4px;
+}
+.top-panel{
+    /*background-color: rgb(18,18,18);*/
+    background-color: aqua;
+
+    border-radius: 10px 10px 0 0;
+    height: 68px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
 }
 .music-player{
     background-color: grey;
     grid-column: span 2;
+}
+
+.button-circle{
+    border-radius: 50%;
+    border: none;
+    width: 33px;
+    height: 33px;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+}
+.profile-buttons {
+    display: flex;
+    width: 430px;
+    justify-content: space-around;
+
+}
+.button-large--white {
+    border: none;
+    border-radius: 30px;
+    padding: 0 18px;
+    font-weight: 800;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+}
+.button-large--black{
+    border: none;
+    border-radius: 30px;
+    padding: 0 18px;
+    font-weight: 800;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+i {
+    font-size: 17px;
+}
+a {
+    text-decoration: none;
+}
+
+.card-nav-menu{
+    color: rgb(179,179,179);
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    padding-left: 5px;
+}
+.text-nav-menu{
+    color: rgb(179,179,179);
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 25px;
 }

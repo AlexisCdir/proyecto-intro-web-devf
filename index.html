@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/11344e612b.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="./styles.css">
     <title>spotify-proyecto</title>
 </head>
 <body>
-    <nav class="navigation-menu">aca va el nav</nav>
-    <header class="top-panel">aca va el header</header>
+    <nav class="navigation-menu">
+        <div class="card-nav-menu">
+            <i class="fa-solid fa-house"></i><a class="text-nav-menu" href="#">Inicio</a>
+        </div>
+        <div class="card-nav-menu">
+            <i class="fa-solid fa-magnifying-glass"></i><a class="text-nav-menu" href="#">Buscar</a>
+        </div>
+        </nav>
+    <main class="main-container">
+    <header class="top-panel">
+        <section class="navigation-buttons">
+            <button class="button-circle"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="button-circle"><i class="fa-solid fa-chevron-right"></i></button>
+        </section>
+        <section class="profile-buttons">
+            <button class="button-large--white">Explorar Premium</button>
+            <button class="button-large--black"><i class="fa-regular fa-circle-down"></i> Instalar aplicacion</button>
+            <button class="button-circle"><i class="fa-solid fa-bell"></i></button>
+            <button class="button-circle"><i class="fa-solid fa-user"></i></button></section>
+    </header>
+</main>
     <aside class="side-playlist-menu">aca va el aside</aside>
-    <main class="main-container">aca va el main</main>
+    
     <footer class="music-player">aca va el footer</footer>
 </body>
 </html>

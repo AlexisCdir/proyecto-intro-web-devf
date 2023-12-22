@@ -1,0 +1,26 @@
+body{
+    color: white;
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 7vh 7vh 74vh 10vh;
+}
+.navigation-menu {
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.top-panel{
+    background-color: blue;
+}
+.side-playlist-menu{
+    background-color: palegreen;
+}
+.main-container{
+    background-color: orange;
+    grid-column: 2;
+    grid-row: 2/4;
+}
+.music-player{
+    background-color: grey;
+    grid-column: span 2;
+}

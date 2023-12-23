@@ -4,7 +4,7 @@ body{
     background-color: black;
     margin: 0;
     display: grid;
-    grid-template-columns: 23vw auto;
+    grid-template-columns: 23vw 76vw;
     grid-template-rows: 62px 62px 77vh 10vh;
     font-family: Rubik;
 }
@@ -39,10 +39,11 @@ body{
     height: 89vh;
     border-radius: 10px;
     margin:  8px 8px 0 4px;
+    width: 100%;
 }
 .top-panel{
     /*background-color: rgb(18,18,18);*/
-    background-color: aqua;
+    background-color: rgb(18,18,18);
 
     border-radius: 10px 10px 0 0;
     height: 68px;
@@ -164,7 +165,6 @@ a {
     overflow-y:  auto;
 
     padding-left: 0;
-    
 }
 
 /* width */
@@ -218,4 +218,76 @@ a {
 .author-playlist-side-menu{
     font-size: 12px;
     margin: 10px 0;
+}
+
+.welcome-panel-main {
+    background-color: rgb(18,18,18);
+    display: flex;
+    flex-direction: column;
+}
+.welcome-title {
+    font-size: 30px;
+    margin-left: 4%;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.card-content-welcome-menu {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card-playlist-welcome-menu {
+    margin: 5px 6px;
+    display: flex;
+
+    border-radius: 5px;
+
+    background-color: rgba(1, 1, 1, 0.2);
+    width: 400px;
+}
+.img-cover-playlist-welcome-menu {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px 0 0 5px;
+}
+.name-playlist-welcome-menu {
+    font-weight: 500;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.reel-cards-playlist-main {
+    width: 100%;
+}
+.reel-cards-title {
+    background-color: rgb(18,18,18);
+    margin-left: 4%;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.card-content-reel-iface {
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 10px 3%;
+}
+.card-playlist-reel {
+    background-color: rgb(24,24,24);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 0 15px;
+}
+.img-cover-playlist-reel {
+    height: 170px;
+    width: 170px;
+    border-radius: 5px 0 0 5px;
+}
+.title-playlist-reel {
+    font-weight: bold;
+}
+.description-playlist-reel {
+    font-size: 14px;
+    color: rgb(179,179,179)
 }

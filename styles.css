@@ -5,7 +5,7 @@ body{
     margin: 0;
     display: grid;
     grid-template-columns: 23vw auto;
-    grid-template-rows: 62px 62px auto 10vh;
+    grid-template-rows: 62px 62px 77vh 10vh;
     font-family: Rubik;
 }
 .navigation-menu {
@@ -23,7 +23,10 @@ body{
     margin: 8px 4px 2px 8px;
 }
 .side-playlist-menu{
-    background-color: palegreen;
+    background-color: rgb(18,18,18);
+
+    display: flex;
+    flex-direction: column;
 
     border-radius: 10px;
     margin: 4px 4px 0 8px;
@@ -50,7 +53,7 @@ body{
     padding: 0 15px;
 }
 .music-player{
-    background-color: grey;
+    background-color: black;
     grid-column: span 2;
 }
 
@@ -106,4 +109,113 @@ a {
     font-size: 16px;
     font-weight: bold;
     padding-left: 25px;
+}
+
+.card-head-side-menu {
+    background-color: rgb(18,18,18);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-buttons-side-menu {
+    display: flex;
+    justify-content: left;
+    padding: 9px 0;
+}
+
+.button-side-menu {
+    border: none;
+    border-radius: 30px;
+    padding: 8px 12px;
+    background-color: rgb(34,34,34);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+
+    margin-left: 8px;
+}
+
+.text-nav-side-menu{
+    color: rgb(179,179,179);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.text-nav-side-menu-small{
+    color: rgb(179,179,179);
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.icon-side-menu{
+    padding: 0 15px;
+}
+
+.icon-side-small {
+    font-size: 14px;
+}
+
+.card-content-side-menu{
+    background-color: rgb(18,18,18);
+    height: 100%;
+    overflow-y:  auto;
+
+    padding-left: 0;
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(89,89,89);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+.card-playlist-side-menu {
+    padding: 10px 10px;
+    margin: 10px;
+    display: flex;
+
+    border-radius: 5px;
+}
+:hover.card-playlist-side-menu{
+    background-color: rgb(34,34,34);
+
+}
+.img-cover-playlist-side-menu {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.description-playlist-side-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.description-playlist-side-menu p{
+    margin: 0;
+}
+.name-playlist-side-menu {
+    font-weight: 500;
+    margin: 10px 0;
+}
+.author-playlist-side-menu{
+    font-size: 12px;
+    margin: 10px 0;
 }
